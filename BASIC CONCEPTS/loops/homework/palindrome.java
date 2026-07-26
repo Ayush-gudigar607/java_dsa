@@ -7,7 +7,6 @@ public class palindrome {
         int n=sc.nextInt();
         int reversed=0;
         int temp=n;
-        int rem;
         while(n>0)
         {
             reversed=reversed * 10+n % 10;
