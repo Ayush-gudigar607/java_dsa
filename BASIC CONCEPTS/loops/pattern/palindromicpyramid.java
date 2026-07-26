@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class numberpyramid {
+public class palindromicpyramid {
  public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of rows:");
@@ -9,15 +9,21 @@ public class numberpyramid {
         int m=sc.nextInt();
         for(int i=1;i<=n;i++)
         {
+
             for(int j=1;j<=n-i;j++)
             {
                 System.out.print(" ");
-            }
-            for (int j=1;j<=i;j++)
-            {
-                System.out.print(i+" "); //for printing numbers in pyramid pattern
             } 
+            //1 st half
+            for (int j=i;j>=1;j--)
+            {
+                System.out.print(j);
+            } 
+            for(int j=2;j<=i;j++)
+            {
+                System.out.print(j);
+            }
             System.out.println();
         }
-    }   
+    }    
 }
