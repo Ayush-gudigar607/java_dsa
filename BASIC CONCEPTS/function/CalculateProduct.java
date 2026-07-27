@@ -2,8 +2,7 @@ import java.util.*;
 public class CalculateProduct {
    public static int CalculateProduct(int a,int b)
     {
-        int product=a*b;
-        return product;
+        return a*b;
     }
     public static void main(String[] args)
     {
@@ -13,7 +12,7 @@ public class CalculateProduct {
         System.out.println("Enter the second number:");
         int b=sc.nextInt();
         System.out.println("The final result is:");
-        int result=CalculateProduct(a,b);
-        System.out.println(result);
+        
+        System.out.println(CalculateProduct(a,b));
     }  
 }
