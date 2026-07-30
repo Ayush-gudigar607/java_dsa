@@ -1,6 +1,16 @@
 import java.util.Scanner;
 
 public class solidrambous {
+    /*
+      Sample pattern (n = 5):
+            *****
+          *****
+         *****
+        *****
+      *****
+
+      Note: Star count is fixed to 5 in this code.
+    */
    public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of rows:");

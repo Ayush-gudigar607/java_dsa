@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 public class halfpyramid {
+    /*
+        Sample pattern (n = 5):
+        1
+        12
+        123
+        1234
+        12345
+    */
   public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of rows:");

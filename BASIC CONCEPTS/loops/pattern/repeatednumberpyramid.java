@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 public class repeatednumberpyramid {
+  /*
+    Sample pattern (n = 5):
+    11111
+    2222
+    333
+    44
+    5
+  */
    public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
       System.out.println("Enter the number of terms:");

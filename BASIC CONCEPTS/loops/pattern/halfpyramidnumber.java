@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
 public class halfpyramidnumber {
+  /*
+    Sample pattern (n = 5):
+      1
+      1 2
+     1 2 3
+    1 2 3 4
+    1 2 3 4 5
+  */
    public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
       System.out.println("Enter the number of terms:");
