@@ -1,3 +1,6 @@
+// Find the maximum & minimum number in an array of integers. 
+
+
 import java.util.*;
 
 public class maxmin {
