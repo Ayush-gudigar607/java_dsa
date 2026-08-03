@@ -15,7 +15,7 @@ public class EvenOddCount {
         matrix[i]=sc.nextInt();
       }
       //output
-      for (int i=number-1;i>=0;i--)
+      for (int i=0;i<number;i++)
       {
         if(matrix[i]%2==0)
         {
