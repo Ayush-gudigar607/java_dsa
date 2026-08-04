@@ -17,7 +17,7 @@ public class SecondMinimum {
       //print second elelmet first sort the elelmet
       Arrays.sort(matrix);
       if(n>2){
-        System.out.print("The second highest elelmet is:"+matrix[1]);
+        System.out.print("The second minimum elelmet is:"+matrix[1]);
       }
       else{
         System.out.print("Please enter atleast 2 elements");
