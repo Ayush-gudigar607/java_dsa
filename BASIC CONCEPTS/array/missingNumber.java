@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class missingNumber {
     public static int gettingMissingNumber(int[] arr, int n) {
         int expectedSum = (n * (n + 1)) / 2;
         int actualSum = 0;
@@ -29,6 +29,5 @@ public class Main {
         // 4. Calculate and print the result
         System.out.println("Missing Number: " + gettingMissingNumber(arr, n));
         
-        sc.close(); // Good practice to close the scanner
     }
 }
