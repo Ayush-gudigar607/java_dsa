@@ -1,40 +1,35 @@
-// Take an array of numbers as input and check if it is an array sorted in ascending order.
-// Eg : { 1, 2, 4, 7 } is sorted in ascending order.
-//        {3, 4, 6, 2} is not sorted in ascending order.
-
 import java.util.Scanner;
 
-
 public class ascending {
- public static void main(String args[])
- {
-    Scanner sc=new Scanner(System.in);
-    int size=sc.nextInt();
-    int numbers[]=new int[size];
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int numbers[] = new int[size];
 
-    for(int i=0;i<numbers.length;i++)
-    {
-        numbers[i]=sc.nextInt();
-    }
-    boolean isascending=false;
-    for(int i=0;i<numbers.length-1;i++)
-    { // i already get the 4 value in ex i=4 when i<numbers.length in below numbers[5] becomes it 
-        if(numbers[i]<numbers[i+1])
-        {
-isascending=false;
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = sc.nextInt();
         }
-    }
 
-    if(isascending)
-    {
-        System.out.println("Ascending order");
-    }
-    else
-    {
-        System.out.println("decending order");
-    }
+        // 1. Assume the array is ascending initially
+        boolean isascending = true; 
 
- }   
+        for (int i = 0; i < numbers.length - 1; i++) { 
+            // 2. If a left item is GREATER than a right item, it's not ascending
+            if (numbers[i] > numbers[i + 1]) {
+                isascending = false;
+                break; // No need to check further
+            }
+        }
+
+        // 3. Print the final result
+        if (isascending) {
+            System.out.println("Ascending order");
+        } else {
+            System.out.println("Not ascending order"); 
+        }
+        
+       
+    }   
 }
 
 
