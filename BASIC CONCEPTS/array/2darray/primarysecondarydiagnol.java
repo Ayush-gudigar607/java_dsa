@@ -61,3 +61,51 @@ public class primarysecondarydiagnol {
       
     }
 }
+
+//second and best method
+// import java.util.*;
+
+// public class primarysecondarydiagnol {
+//     public static void main(String[] args) {
+//       Scanner sc=new Scanner(System.in);
+//       int row=sc.nextInt();
+//       int col=sc.nextInt();
+
+//       int[][] matrix=new int[row][col];
+//       int[] primarydiagonal=new int[row];
+//       int[] secondaryDiagonal=new int[row];
+
+//       for(int i=0;i<row;i++)
+//       {
+//         for(int j=0;j<col;j++)
+//         {
+//           matrix[i][j]=sc.nextInt();
+//         }
+//       }
+//       //printing the primary diagonal
+//       for (int i=0;i<row ;i++ )
+//       {
+//         primarydiagonal[i]=matrix[i][i];
+//       } 
+
+//       for (int i=0;i<row ;i++ )
+//       {
+//         secondaryDiagonal[i]=matrix[i][col-1-i];
+//       } 
+
+
+
+//  //for primary diagonal
+//       for(int i=0;i<primarydiagonal.length;i++)
+//       {
+//         System.out.print(primarydiagonal[i]+" ");
+//       }
+//       System.out.println();
+// //for secondary diagonal
+//        for(int i=0;i<secondaryDiagonal.length;i++)
+//       {
+//         System.out.print(secondaryDiagonal[i]+" ");
+//       }
+      
+//     }
+// }
