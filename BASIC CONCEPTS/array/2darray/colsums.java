@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class rowsums {
+public class colsums {
     public static void main(String[] args) {
       Scanner sc=new Scanner(System.in);
       int row=sc.nextInt();
       int col=sc.nextInt();
-      int rowsum=0;
+      int colsum=0;
 
       int[][] matrix=new int[row][col];
 
@@ -17,15 +17,18 @@ public class rowsums {
         }
       }
       
-       for(int i=0;i<row;i++)
+       for(int j=0;j<col;j++)
       {
-        for(int j=0;j<col;j++)
+        for(int i=0;i<row;i++)
         {
-          rowsum+=matrix[i][j];
+          colsum+=matrix[i][j];
         }
 
-        System.out.println(" sum of "+i+" row is:"+rowsum);
-        rowsum=0;
+        System.out.println(" sum of "+j+" col is:"+colsum);
+        colsum=0;
       }
+
+
+      
     }
 }
