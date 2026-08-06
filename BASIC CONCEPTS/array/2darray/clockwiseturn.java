@@ -27,6 +27,5 @@ public class clockwiseturn {
         } 
         System.out.println();
       }
-    
     }
 }
