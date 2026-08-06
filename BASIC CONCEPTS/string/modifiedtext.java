@@ -17,3 +17,34 @@ public class modifiedtext {
       
    }
 }
+
+
+// public class modifiedtext {
+//    public static void main(String args[]) {
+       
+//       Scanner sc=new Scanner(System.in);
+//       System.out.print("Enter the text:");
+//       String originaltext=sc.next();
+
+//       char[] chars=originaltext.toCharArray();
+
+//       for(int i=0;i<chars.length;i++)
+//       {
+//         if(chars[i]=='e')
+//         {
+//           chars[i]='i';
+//         }
+//       }
+
+//       String modifiedtext=new String(chars);
+//       System.out.println(modifiedtext);
+
+      
+
+
+
+      
+      
+//    }
+// }
+
