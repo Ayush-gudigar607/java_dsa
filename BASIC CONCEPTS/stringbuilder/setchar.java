@@ -1,4 +1,4 @@
-
+//this code mainly for set the character in the stringbuilder class
 public class setchar {
     public static void main(String[] main)
     {
