@@ -1,4 +1,4 @@
-
+//this is the code where we can append the string in the stringbuilder class
 public class append {
     public static void main(String[] args) {
         StringBuilder sb=new StringBuilder("hell");
