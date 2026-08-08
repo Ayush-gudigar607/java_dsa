@@ -1,4 +1,4 @@
-
+//this is mainly for get the character from the stringbuilder class
 public class getchar {
     public static void main(String[] args)
     {
