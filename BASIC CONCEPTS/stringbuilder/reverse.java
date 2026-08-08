@@ -1,4 +1,4 @@
-
+//reverse the string using the stringbuilder with front and back method
 public class reverse {
     public static void main(String[] args)
     {
