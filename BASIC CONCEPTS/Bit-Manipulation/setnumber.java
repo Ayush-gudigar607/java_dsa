@@ -13,5 +13,6 @@ public class setnumber {
       else{
         System.out.print("bit is one");
       }
+      System.out.print(newnumber);
     }
 }

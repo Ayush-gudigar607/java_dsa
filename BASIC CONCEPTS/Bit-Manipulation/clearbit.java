@@ -7,7 +7,5 @@ public class clearbit{
       int NOTbitmask=~(bitMask);
       int newNumber=(NOTbitmask & n);
       System.out.print(newNumber);
-
-
     }
 }
