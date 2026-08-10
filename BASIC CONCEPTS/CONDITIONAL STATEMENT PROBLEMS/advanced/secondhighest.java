@@ -1,3 +1,5 @@
+
+//THIS IS THE PROGRAM TO FIND THE SECOND HIGHEST NUMBER AMONG THREE NUMBERS
 import java.util.*;
 public class secondhighest {
     public static void main(String[] args) {
