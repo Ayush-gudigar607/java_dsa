@@ -15,6 +15,7 @@
 //     }
 // }
 
+//THIS IS THE PROGRAM TO CHECK WHETHER A CHARACTER IS VOWEL OR CONSONANTS
 import java.util.*;
 
 public class vocons {
