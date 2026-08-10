@@ -1,5 +1,4 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
+//this is the program to find the greatest of two numbers using conditional statements
 import java.util.*;
 public class greatesttwono {
     public static void main(String[] args) {
