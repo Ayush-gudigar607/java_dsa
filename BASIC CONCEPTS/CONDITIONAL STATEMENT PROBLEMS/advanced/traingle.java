@@ -1,3 +1,5 @@
+
+//THIS IS THE PROGRAM TO CHECK WHETHER A TRIANGLE IS EQUILATERAL, ISOSCELES OR SCALENE
 import java.util.*;
 public class traingle {
      public static void main(String[] args) {
