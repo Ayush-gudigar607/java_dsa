@@ -1,5 +1,4 @@
-// Online Java Compiler
-// Use this editor to write, compile and run your Java code online
+//this is the program to check whether a person is eligible to vote or not using conditional statements
 import java.util.*;
 class vote {
     public static void main(String[] args) {
