@@ -1,3 +1,5 @@
+//THIS IS THE PROGRAM TO CHECK WHETHER A YEAR IS LEAP YEAR OR NOT
+
 import java.util.*;
 public class leap {
     public static void main(String[] args) {
