@@ -1,3 +1,4 @@
+//THIS IS THE PROGRAM TO CALCULATE THE ELECTRICITY BILL BASED ON CHARGE PER UNIT AND TOTAL UNITS CONSUMED
 import java.util.Scanner;
 public class electricity {
   public static void main(String[] args) {
