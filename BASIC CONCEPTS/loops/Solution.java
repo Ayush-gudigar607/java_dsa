@@ -1,3 +1,5 @@
+//This code is a solution to a problem that involves generating a series of numbers based on given inputs. The program reads an integer `q` which represents the number of queries. For each query, it reads three integers: `a`, `b`, and `n`.
+
 import java.util.Scanner;
 
 public class Solution {
