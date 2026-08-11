@@ -30,9 +30,10 @@ public class prime {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
 
+    if (n == 1 || n <= 0) return;
+    
     boolean res = isPrime(n);
     // If isPrime already printed an error message, don't print prime/composite again
-    if (n == 1 || n <= 0) return;
 
     if (res) System.out.print("Prime number");
     else System.out.print("Not a prime number");
