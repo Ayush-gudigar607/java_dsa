@@ -1,3 +1,4 @@
+//this is a simple Java program that generates the Fibonacci sequence up to a specified number of terms using a function. The program prompts the user to enter an integer n, then it calls the `Fibonacci` function to compute and display the first n terms of the Fibonacci sequence.
 import java.util.Scanner;
 
 public class fibonacci {
