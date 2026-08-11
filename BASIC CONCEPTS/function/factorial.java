@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class factorial{
-    public static int factorial(int n)
+    public static int factorials(int n)
     {
   if(n<0)
   {
@@ -23,6 +23,6 @@ public class factorial{
     {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-System.out.print(factorial(n));    }
+System.out.print(factorials(n));    }
 
 }
