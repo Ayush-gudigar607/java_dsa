@@ -1,3 +1,4 @@
+//This is a simple Java program that calculates the factorial of a number using a function. The program prompts the user to enter an integer, then it calls the `factorial` function to compute its factorial and displays the result.
 import java.util.Scanner;
 
 public class factorial{
