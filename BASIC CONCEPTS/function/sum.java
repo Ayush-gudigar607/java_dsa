@@ -1,3 +1,4 @@
+//This is a simple Java program that calculates the sum of two numbers using a function. The program prompts the user to enter two integers, then it calls the `sum` function to compute their sum and displays the result.
 import java.util.Scanner;
 
 public class sum {
