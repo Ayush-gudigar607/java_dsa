@@ -2,7 +2,7 @@ import java.util.*;
 
 public class even {
 
-  public static int even(int n) {
+  public static int evenvalue(int n) {
     if(n%2==0)
     {
       return 1;
@@ -17,7 +17,7 @@ public class even {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
 
-    int res = even(n);
+    int res = evenvalue(n);
     // If isPrime already printed an error message, don't print prime/composite again
 
     if (res==1) 
