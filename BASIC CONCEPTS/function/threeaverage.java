@@ -1,3 +1,4 @@
+//this is a simple Java program that calculates the average of three numbers using a function. The program prompts the user to enter three integers, then it calls the `average` function to compute their average and displays the result.
 import java.util.Scanner;
 
 public class threeaverage {
