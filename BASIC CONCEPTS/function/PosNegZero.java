@@ -1,3 +1,5 @@
+//This is a simple Java program that counts the number of positive, negative, and zero integers entered by the user. The program continues to accept integers until the user enters -1, at which point it displays the counts of positive, negative, and zero numbers.
+
 import java.util.*;
 
 public class PosNegZero{
