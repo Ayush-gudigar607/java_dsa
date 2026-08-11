@@ -1,3 +1,4 @@
+//this is a simple Java program that calculates the greatest common divisor (GCD) of two integers using a function. The program prompts the user to enter two integers, then it calls the `GCD` function to compute their GCD and displays the result.
 import java.util.*;
 
 public class gcd {
