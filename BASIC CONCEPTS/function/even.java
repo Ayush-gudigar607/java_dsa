@@ -2,7 +2,7 @@ import java.util.*;
 
 public class even {
 
-  public static   int  even(int n) {
+  public static int even(int n) {
     if(n%2==0)
     {
       return 1;
