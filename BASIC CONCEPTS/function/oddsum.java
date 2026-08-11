@@ -1,3 +1,5 @@
+//this is a simple Java program that calculates the sum of the first n odd numbers using a function. The program prompts the user to enter an integer n, then it calls the `oddSum` function to compute the sum of the first n odd numbers and displays the result.
+
 import java.util.*;
 
 public class oddsum {
