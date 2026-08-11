@@ -1,3 +1,4 @@
+//This is a simple Java program that checks if a number is prime using a function. The program prompts the user to enter an integer, then it calls the `isPrime` function to determine if the number is prime and displays the result.
 import java.util.*;
 
 public class prime {
@@ -31,7 +32,7 @@ public class prime {
     int n = sc.nextInt();
 
     if (n == 1 || n <= 0) return;
-    
+
     boolean res = isPrime(n);
     // If isPrime already printed an error message, don't print prime/composite again
 
