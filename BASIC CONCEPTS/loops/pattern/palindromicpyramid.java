@@ -27,6 +27,7 @@ public class palindromicpyramid {
             {
                 System.out.print(j);
             } 
+            
             for(int j=2;j<=i;j++)
             {
                 System.out.print(j);

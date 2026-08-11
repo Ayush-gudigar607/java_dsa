@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class name {
+  public static void printMyname(String name)
+  {
+    System.out.print("My name is:"+name);
+    return;
+  }
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      String str=sc.next();
+      printMyname(str);
+    }
+}
