@@ -1,4 +1,4 @@
-
+//This program is mainly worked on sorting technique named as bubblesort
 public class bubblesort{
   public static void printArray(int arr[])
   {
