@@ -14,7 +14,7 @@ public class bubblesort{
       //declaration of array element 
       int[] arr={7,8,3,1,2};
 
-      //bubble short
+      //bubble short(time complexity is O(n^2))
       for(int i=0;i<arr.length-1;i++)
       {
         
