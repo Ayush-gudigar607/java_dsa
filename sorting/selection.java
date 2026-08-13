@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class selection {
   public static void printArray(int arr[])
