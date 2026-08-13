@@ -3,7 +3,7 @@ public class selection {
 //program to print the aeray
   public static void printArray(int arr[])
   {
-    for (int i=0;i<arr.length-1 ;i++ ) 
+    for (int i=0;i<arr.length ;i++ ) 
     {
       System.out.print(arr[i]);
     }
