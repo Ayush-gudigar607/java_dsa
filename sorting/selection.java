@@ -1,4 +1,4 @@
-
+//This is the program for selection sort 
 public class selection {
   public static void printArray(int arr[])
   {
