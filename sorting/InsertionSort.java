@@ -22,7 +22,7 @@ public class InsertionSort {
 
         while(j>=0 && current<arr[j])
         {
-          //shift
+          //shift the element
          arr[j+1]=arr[j];
          j--;
         }
