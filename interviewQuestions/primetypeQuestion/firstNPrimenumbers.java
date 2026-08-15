@@ -6,6 +6,7 @@ public class firstNPrimenumbers {
     {
         int printed = 0;
         int num = 2;
+        
 
         while(printed < count)
         {
