@@ -28,7 +28,7 @@ public class selection {
         int temp=arr[smallest];
         arr[smallest]=arr[i];
         arr[i]=temp;
-
+        
       } 
 
       printArray(arr);
