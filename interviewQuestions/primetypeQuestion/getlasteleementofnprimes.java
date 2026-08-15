@@ -1,23 +1,34 @@
 import java.util.Scanner;
 
-public class firstNPrimenumbers {
+public class getlasteleementofnprimes {
 
-    public static void printNumbers(int count)
+   public static void printNumbers(int count)
+   {
+    int num=2;
+    int index=0;
+
+    int arr[]=new int[count];
+
+    while(index<count)
     {
-        int printed = 0;
-        int num = 2;
-
-        while(printed < count)
-        {
-            if(isPrime(num))
-            {
-                System.out.print(num + " ");
-                printed++;
-            }
-
-            num++;
-        }
+      if(isPrime(num))
+      {
+        arr[index]=num;
+        index++;
+      }
+      num++;
     }
+
+      //  // Print the array
+      //   for(int i = 0; i < count; i++)
+      //   {
+      //       System.out.print(arr[i] + " ");
+      //   }
+
+        System.out.print(arr[count-1]);
+
+    }
+   
 
     public static boolean isPrime(int n)
     {
