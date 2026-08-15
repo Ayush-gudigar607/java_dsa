@@ -1,17 +1,14 @@
+
 import java.util.Scanner;
 
 public class firstNPrimenumbers {
 
-    public static void printNumbers(int count)
-    {
+    public static void printNumbers(int count) {
         int printed = 0;
         int num = 2;
-        
 
-        while(printed < count)
-        {
-            if(isPrime(num))
-            {
+        while (printed < count) {
+            if (isPrime(num)) {
                 System.out.print(num + " ");
                 printed++;
             }
@@ -20,17 +17,13 @@ public class firstNPrimenumbers {
         }
     }
 
-    public static boolean isPrime(int n)
-    {
-        if(n < 2)
-        {
+    public static boolean isPrime(int n) {
+        if (n < 2) {
             return false;
         }
 
-        for(int i = 2; i <= n / 2; i++)
-        {
-            if(n % i == 0)
-            {
+        for (int i = 2; i <= n / 2; i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
@@ -38,21 +31,15 @@ public class firstNPrimenumbers {
         return true;
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        if(n == 1)
-        {
+        if (n == 1) {
             System.out.print("2");
-        }
-        else if(n == 2)
-        {
+        } else if (n == 2) {
             System.out.print("2 3");
-        }
-        else
-        {
+        } else {
             printNumbers(n);
         }
     }
