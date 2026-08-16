@@ -8,8 +8,7 @@ public class clockwiseturn {
       int col=sc.nextInt();
 
       int[][] matrix=new int[row][col];
-      int[] primarydiagonal=new int[row];
-      int[] secondaryDiagonal=new int[row];
+      
 
       for(int i=0;i<row;i++)
       {
