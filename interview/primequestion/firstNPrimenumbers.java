@@ -36,12 +36,14 @@ public class firstNPrimenumbers {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
 
-        if (n == 1) {
-            System.out.print("2");
-        } else if (n == 2) {
-            System.out.print("2 3");
-        } else {
-            printNumbers(n);
-        }
+        // if (n == 1) {
+        //     System.out.print("2");
+        // } else if (n == 2) {
+        //     System.out.print("2 3");
+        // } else {
+        //     printNumbers(n);
+        // }
+
+        printNumbers(n);
     }
 }
