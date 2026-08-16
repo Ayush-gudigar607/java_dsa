@@ -1,3 +1,4 @@
+//program to count the number of even and odd numbers in an array
 import java.util.*;
 
 public class EvenOddCount {
@@ -17,6 +18,7 @@ public class EvenOddCount {
       //output
       for (int i=0;i<number;i++)
       {
+        //logic to count the even and odd numbers in an array
         if(matrix[i]%2==0)
         {
           countEven++;
