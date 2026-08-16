@@ -1,3 +1,4 @@
+//Program to reverse an array
 import java.util.*;
 
 public class reversearray {
@@ -12,7 +13,8 @@ public class reversearray {
       {
         matrix[i]=sc.nextInt();
       }
-      //output
+
+      //logic to reverse the array
       for (int i=number-1;i>=0;i--)
       {
         System.out.print(matrix[i]+" ");
