@@ -1,4 +1,4 @@
-
+//Program to take input of an array from user and print the array
 import java.util.*;
 
 public class arrayinputoutput {

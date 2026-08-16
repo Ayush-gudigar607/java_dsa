@@ -1,3 +1,4 @@
+//Program to check if the array is in ascending order or not
 import java.util.Scanner;
 
 public class ascending {

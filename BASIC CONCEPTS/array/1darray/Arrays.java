@@ -1,4 +1,4 @@
-
+//Program to demonstrate the concept of 1D array
 public class Arrays{
     public static void main(String[] args) {
       int [] marks=new int[3];
