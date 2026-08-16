@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class hallow {
+   
    /*
       Sample pattern (n = 5, m = 5):
       *****
@@ -9,6 +10,7 @@ public class hallow {
       *   *
       *****
    */
+
   public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number of rows:");

@@ -23,6 +23,7 @@ public class firstNPrimenumbers {
         }
 
         for (int i = 2; i <= n / 2; i++) {
+            //here we can use Math.sqrt(n) instead of n/2 to reduce the number of iterations, but for simplicity, we are using n/2
             if (n % i == 0) {
                 return false;
             }
