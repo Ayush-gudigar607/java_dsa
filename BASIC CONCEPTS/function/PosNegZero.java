@@ -3,7 +3,7 @@
 import java.util.*;
 
 public class PosNegZero{
-
+//static variables can accessed by all the methos which will be defined by user
     static int positivecount = 0;
     static int negativeCount = 0;
     static int zeroCount = 0;
