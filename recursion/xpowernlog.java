@@ -1,6 +1,6 @@
 package recursion;
 
-public class xpowern {
+public class xpowernlog {
 
     public static int calPower(int x, int n) {
         if (n == 0) {
@@ -10,9 +10,14 @@ public class xpowern {
         if (x == 0) {
             return 0;
         }
-        int xPownm1 = calPower(x, n - 1);
-        int xPown = x * xPownm1;
-        return xPown;
+        // int xPownm1 = calPower(x, n - 1);
+        // int xPown = x * xPownm1;
+        // return xPown;
+        if (n % 2 == 0) {
+            return calPower(x, n / 2) * calPower(x, n / 2);
+        } else { //n is odd
+            return calPower(x, n / 2) * calPower(x, n / 2) * x;
+        }
     }
 
     public static void main(String[] args) {
