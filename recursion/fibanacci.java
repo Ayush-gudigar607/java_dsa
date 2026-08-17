@@ -1,3 +1,4 @@
+//This is the program to print the fibannaci sequence
 package recursion;
 
 public class fibanacci {
@@ -10,8 +11,6 @@ public class fibanacci {
      int c=a+b;
      System.out.println(c);
      getFibannaciSequence(b, c, n-1);
-
-
     }
 
     public static void main(String[] args) {
