@@ -13,23 +13,19 @@ package recursion;
 // }
 
 /*   Recursion method print the array values */
+public class recursion {
 
-
-      public class recursion {
-
-        public static void printNumber(int n) {
-            if (n == 0) {
-                return;
-            } else {
-                System.out.print(n + " ");
-                printNumber(n - 1);
-            }
+    public static void printNumber(int n) {
+        if (n == 0) {
+            return;
+        } else {
+            System.out.print(n + " ");
+            printNumber(n - 1);
         }
-    
+    }
 
     public static void main(String[] args) {
         int n = 5;
         printNumber(n);
     }
 }
-
