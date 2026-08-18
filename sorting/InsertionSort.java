@@ -24,12 +24,12 @@ public class InsertionSort {
         {
           //shift the element
          arr[j+1]=arr[j];
+         //this will help to traverse the previous element
          j--;
         }
 
         //placement of current element
         arr[j+1]=current;
-
       }
       printArray(arr);
     }
