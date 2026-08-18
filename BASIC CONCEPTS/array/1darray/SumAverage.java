@@ -28,7 +28,7 @@ public class SumAverage { // 1. Removed invalid parentheses from class name
         for (int i = 0; i < numbers; i++) {
             matrix[i] = sc.nextInt(); // 8. Fixed storing inputs into 'matrix', not 'numbers'
         } 
-// 9. Fixed the method calls to pass correct parameters
+        // 9. Fixed the method calls to pass correct parameters
         int totalSum = calculateSum(matrix); 
         average(totalSum, numbers); 
     }
