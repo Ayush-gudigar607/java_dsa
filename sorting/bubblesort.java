@@ -18,7 +18,7 @@ public class bubblesort{
       for(int i=0;i<arr.length-1;i++)
       {
         //This is the main logic for sorting: 8 is the biggest element, so it will be placed at the last position. Therefore, there is no need to traverse that element again in the next loop. That is why we add -i
-        for(int j=0;j<arr.length-i-1;j++)
+        for(int j=0;j<arr.length-1-i;j++)
         {
            if(arr[j]>arr[j+1])
            {
