@@ -18,9 +18,10 @@ public class duplicate {
         }
         //sorting the array and printing the unique elements using Arrays.sort() method
         Arrays.sort(matrix);
+        //printing the first element of the array
         System.out.print(matrix[0] + " ");
         for (int i = 1; i < matrix.length; i++) {
-
+            //checking if the current element is not equal to the previous element, if not then print it
             if (matrix[i] != matrix[i - 1]) {
                 System.out.print(matrix[i] + " ");
             }
