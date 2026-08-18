@@ -8,7 +8,7 @@ public class reversearray {
 
       int[] matrix=new int[number];
 
-      //input
+      //Read the element for the matrix
       for (int i=0;i<number ;i++ )
       {
         matrix[i]=sc.nextInt();
