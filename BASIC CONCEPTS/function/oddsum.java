@@ -4,30 +4,26 @@ import java.util.*;
 
 public class oddsum {
 
-  public static  void  oddSum(int n) {
-    int sum=0;
-    for(int i=1;i<=n*2;i++)
-    {
-      if(i%2!=0)
-      {
-   sum+=i;
-      }
+    public static void oddSum(int n) {
+        int sum = 0;
+        for (int i = 1; i <= n * 2; i++) {
+            if (i % 2 != 0) {
+                sum += i;
+            }
+        }
+        System.out.print("Sum of odd numbers:" + sum);
     }
-    System.out.print("Sum of odd numbers:"+sum);
-  }
 
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int n=sc.nextInt();
-    oddSum(n);    
-  
-  }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        oddSum(n);
+
+    }
 }
 
 // import java.util.*;
-
 // public class oddsum {
-
 //   public static  void  oddSum(int n) {
 //     int sum=0;
 //     int countOdd=1;
@@ -38,19 +34,14 @@ public class oddsum {
 //     }
 //     System.out.print("Sum of odd numbers:"+sum);
 //   }
-
 //   public static void main(String[] args) {
 //     Scanner sc = new Scanner(System.in);
 //     int n=sc.nextInt();
 //     oddSum(n);    
-  
 //   }
 // }
-
 // import java.util.*;
-
 // public class oddsum {
-
 //   public static  void  oddSum(int n) {
 //     int sum=0;
 //     for(int i=1;i<=n;i++)
@@ -59,17 +50,13 @@ public class oddsum {
 //     }
 //     System.out.print("Sum of odd numbers:"+sum);
 //   }
-
 //   public static void main(String[] args) {
 //     Scanner sc = new Scanner(System.in);
 //     int n=sc.nextInt();
 //     oddSum(n);    
-  
 //   }
 // }
-
 // ****best method*****
-
 // public class oddSum{
 //   public static void main(String[] args)
 //   {
@@ -78,10 +65,4 @@ public class oddsum {
 //     System.out.println("Sum of odd numbers:"+sum);
 //   }
 // }
-
-
-
-
-
-
 
