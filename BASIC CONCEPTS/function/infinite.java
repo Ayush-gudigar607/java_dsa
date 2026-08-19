@@ -13,3 +13,28 @@ System.out.print("****");
 
   }
 }
+
+// //for loop infinite loop function
+// import java.util.*;
+
+// public class even{
+//   public static void infiniteloop()
+//   {
+
+//     for (int i=0; ;i++ )
+//     {
+//       System.out.print(i);
+//     } 
+   
+//    }
+
+  
+//   public static void main(String[] args){
+    
+//       infiniteloop();
+
+//   }
+// }
+
+
+
