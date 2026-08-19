@@ -14,6 +14,7 @@ public class armstrong {
         while (n > 0) {
             remainder = n % 10;
             sum = sum + Math.pow(remainder,length);
+            //or rem*rem*rem
             n = n / 10;
         }
 

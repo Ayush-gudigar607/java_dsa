@@ -25,3 +25,25 @@ public class even {
         }
     }
 }
+
+
+//using the bit manipulation technique
+// import java.util.*;
+
+// public class even{
+//   public static boolean even(int n)
+//   {
+//     if((n&1)==0)
+//     {
+//       return true;
+//     }
+//     else{
+//       return false;
+//     }
+//   }
+//   public static void main(String[] args){
+//     int n=10;
+//      boolean value=even(n);
+//      System.out.print(value);
+//   }
+// }
