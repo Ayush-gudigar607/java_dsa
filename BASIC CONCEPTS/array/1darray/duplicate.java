@@ -30,3 +30,25 @@ public class duplicate {
 
     }
 }
+
+
+//another method
+// import java.util.Arrays;
+
+// public class Main {
+//     public static void duplicate(int[] numbers) {
+//         Arrays.sort(numbers);
+
+//         for (int i = 0; i < numbers.length; i++) {
+//             if (i == 0 || numbers[i] != numbers[i - 1]) {
+//                 System.out.print(numbers[i] + " ");
+//             }
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         int[] numbers = {4, 2, 2, 1, 4, 3};
+
+//         duplicate(numbers);
+//     }
+// }
