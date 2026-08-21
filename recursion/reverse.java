@@ -8,6 +8,12 @@ public class reverse{
             return;
         }
 
+        // //if(index==0)
+        // {
+        //     System.out.print(str.charAt(index));
+        //     return;
+        // }
+
         System.out.print(str.charAt(index));
         reverseString(str,index-1);
     }
