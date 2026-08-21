@@ -11,7 +11,8 @@ public class firstlastindex {
             return;
         }
         //if first element is found then store the index in first and if last element is found then store the index in last
-        if (str.charAt(index) == ele) {
+        char currentChar = str.charAt(index);
+        if (currentChar == ele) {
 
             if (first == -1) {
                 first = index;
