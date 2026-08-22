@@ -1,51 +1,36 @@
 package level2;
 
-public class firstlastindex {
+public class Movex{
+    public static void MoveX(String str,int idx,int count,String newString)
+    {
 
-    // Stores the first and last index of the element
-    static int first = -1;
-    static int last = -1;
-
-    // Finds the first and last occurrence using recursion
-    public static void firstLastIndex(String str, char ele, int index) {
-
-        // Base case: reached the end of the string
-        if (index == str.length()) {
+        if(idx==str.length())
+        {
+            for(int i=0;i<count;i++)
+            {
+                newString+='x';
+            }
+            System.out.println(newString);
             return;
         }
+        char currentChar=str.charAt(idx);
 
-        // Get the current character
-        char currentChar = str.charAt(index);
-
-        // Check if current character is the element
-        if (currentChar == ele) {
-
-            // Store the first occurrence
-            if (first == -1) {
-                first = index;
-            } // Update last whenever element is found again
-            else {
-                last = index;
+        if(currentChar=='x')
+            {
+                count++;
+                MoveX(str,idx+1,count,newString);
             }
-        }
-
-        // Move to the next character
-        firstLastIndex(str, ele, index + 1);
+            else
+            {
+                newString+=currentChar;
+                MoveX(str,idx+1,count,newString);
+            }
+        
     }
 
-    public static void main(String args[]) {
-
-        // Input string
-        String str = "abcaacd";
-
-        // Element whose first and last index we need
-        char ele = 'a';
-
-        // Start recursion from index 0
-        firstLastIndex(str, ele, 0);
-
-        // Print the result
-        System.out.println("First index: " + first);
-        System.out.println("Last index: " + last);
+    public static void main(String[] args)
+    {
+  String str="axbcxxd";
+  MoveX(str,0,0,"");
     }
 }
