@@ -10,6 +10,7 @@ public class xpowern {
         if (x == 0) {
             return 0;
         }
+        
         int xPownm1 = calPower(x, n - 1);
         int xPown = x * xPownm1;
         return xPown;

@@ -20,6 +20,7 @@ public class recursion {
             return;
         } else {
             System.out.print(n + " ");
+            //recursive call to printNumber with n-1
             printNumber(n - 1);
         }
     }
