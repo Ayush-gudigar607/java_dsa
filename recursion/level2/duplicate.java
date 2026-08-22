@@ -1,32 +1,47 @@
 package level2;
 
 public class duplicate {
-   //make boolean array of size 26 to store the elements which are already present in the string
+
+    // Stores whether a character has already appeared
+    // a -> index 0, b -> index 1, c -> index 2, ...
     public static boolean[] map = new boolean[26];
 
+    // Removes duplicate characters using recursion
     public static void removeDuplicates(String str, int idx, String newString) {
-        //if the index is equal to the length of the string then print the newString and return
+
+        // Base case: all characters are processed
         if (idx == str.length()) {
             System.out.println(newString);
             return;
         }
 
-        //get the current character
+        // Get the current character
         char currentChar = str.charAt(idx);
-        //already element is there then this condition
+
+        // Check whether the character is already present
         if (map[currentChar - 'a'] == true) {
+
+            // Character is duplicate, so skip it
             removeDuplicates(str, idx + 1, newString);
+
         } else {
-            //if the element is new then add the element then make it true
+
+            // Character is new, so add it
             newString += currentChar;
+
+            // Mark the character as already present
             map[currentChar - 'a'] = true;
+
+            // Move to the next character
             removeDuplicates(str, idx + 1, newString);
         }
     }
 
     public static void main(String[] args) {
+
         String str = "abbccdd";
+
+        // Start recursion from index 0
         removeDuplicates(str, 0, "");
     }
-
 }
