@@ -4,34 +4,48 @@ import java.util.HashSet;
 
 public class uniquesubsequent {
 
-    public static void subsequences(String str, int idx, String newString, HashSet<String> set) {
+    // Generates all unique subsequences using recursion
+    public static void subsequences(
+            String str, int idx, String newString, HashSet<String> set) {
 
+        // Base case: all characters are processed
         if (idx == str.length()) {
-            //if the newString is already present in the set then return else print the newString and add it to the set
+
+            // Check if this subsequence already exists
             if (set.contains(newString)) {
                 return;
             } else {
-                //print the newString and add it to the set
+
+                // Print and store the new subsequence
                 System.out.println(newString);
                 set.add(newString);
                 return;
             }
         }
-        //get the current character
+
+        // Get the current character
         char currentChar = str.charAt(idx);
 
-        //two choices =choose or not choose
-        //to be 
-        subsequences(str, idx + 1, newString + currentChar, set);
+        // Choice 1: Include the current character
+        subsequences(
+                str, idx + 1, newString + currentChar, set
+        );
 
-        //not to be 
-        subsequences(str, idx + 1, newString, set);
+        // Choice 2: Do not include the current character
+        subsequences(
+                str, idx + 1, newString, set
+        );
     }
 
     public static void main(String args[]) {
-        //test case for unique subsequent
+
+        // Input string
         String str = "aaa";
+
+        // HashSet stores subsequences that are already printed
         HashSet<String> set = new HashSet<>();
+
+        // Start recursion from index 0
         subsequences(str, 0, "", set);
     }
 }
