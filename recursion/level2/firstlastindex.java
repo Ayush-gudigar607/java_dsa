@@ -2,37 +2,48 @@ package level2;
 
 public class firstlastindex {
 
+    // Stores the first and last index of the element
     static int first = -1;
     static int last = -1;
 
+    // Finds the first and last occurrence using recursion
     public static void firstLastIndex(String str, char ele, int index) {
-        //base case index is equal to the length of the string then return
+
+        // Base case: reached the end of the string
         if (index == str.length()) {
             return;
         }
-        //if first element is found then store the index in first and if last element is found then store the index in last
+
+        // Get the current character
         char currentChar = str.charAt(index);
+
+        // Check if current character matches the element
         if (currentChar == ele) {
 
+            // First occurrence
             if (first == -1) {
                 first = index;
-            } else {
+            } 
+            // Subsequent occurrence becomes the last index
+            else {
                 last = index;
             }
         }
-        //recursive call for firstLastIndex
+
+        // Move to the next character
         firstLastIndex(str, ele, index + 1);
     }
 
     public static void main(String args[]) {
+
         String str = "abcaacd";
         char ele = 'a';
-        //function call for firstLastIndex
+
+        // Start recursion from index 0
         firstLastIndex(str, ele, 0);
-        // System.out.println("First index: " + str.charAt(first));
-        // System.out.println("Last index: " + str.charAt(last));
+
+        // Print the first and last occurrence
         System.out.println("First index: " + first);
         System.out.println("Last index: " + last);
-
     }
 }
