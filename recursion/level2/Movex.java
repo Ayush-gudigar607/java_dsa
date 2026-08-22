@@ -1,30 +1,51 @@
 package level2;
 
-public class Movex {
+public class firstlastindex {
 
-    public static void Movex(String str, int index, int count, String newString) {
-        //base case if index is equal to the length of the string then return
+    // Stores the first and last index of the element
+    static int first = -1;
+    static int last = -1;
+
+    // Finds the first and last occurrence using recursion
+    public static void firstLastIndex(String str, char ele, int index) {
+
+        // Base case: reached the end of the string
         if (index == str.length()) {
-            for (int i = 0; i < count; i++) {
-                newString += 'x';
-            }
-            System.out.println(newString);
             return;
         }
-        //if current character is 'x' then increment the count and make a recursive call for the next index
+
+        // Get the current character
         char currentChar = str.charAt(index);
-        if (currentChar == 'x') {
-            count++;
-            Movex(str, index + 1, count, newString);
-        } else {
-            newString += currentChar; //newString=newString+currentChar;
-            Movex(str, index + 1, count, newString);
+
+        // Check if current character is the element
+        if (currentChar == ele) {
+
+            // Store the first occurrence
+            if (first == -1) {
+                first = index;
+            } // Update last whenever element is found again
+            else {
+                last = index;
+            }
         }
+
+        // Move to the next character
+        firstLastIndex(str, ele, index + 1);
     }
 
     public static void main(String args[]) {
-        //test case for Movex
-        String str = "axbxcxxd";
-        Movex(str, 0, 0, "");
+
+        // Input string
+        String str = "abcaacd";
+
+        // Element whose first and last index we need
+        char ele = 'a';
+
+        // Start recursion from index 0
+        firstLastIndex(str, ele, 0);
+
+        // Print the result
+        System.out.println("First index: " + first);
+        System.out.println("Last index: " + last);
     }
 }
