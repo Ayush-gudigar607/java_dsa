@@ -1,96 +1,58 @@
 package level3;
 
-/**
- * This class generates all permutations of a given string using recursion.
+/*
+ * This program prints all possible permutations
+ * of a given string using recursion.
+ *
+ * Example:
+ * Input: abc
+ *
+ * Output:
+ * abc
+ * acb
+ * bac
+ * bca
+ * cab
+ * cba
  */
+
 public class StringPermutation {
 
-    /**
-     * Generates and prints all possible permutations of the string.
-     *
-     * @param str The characters that are still available to choose.
-     * @param permutation The characters already selected for the permutation.
+    /*
+     * str = characters that are still left
+     * permutation = characters that are already selected
      */
     public static void printPermutation(String str, String permutation) {
 
-        /*
-         * Base Case:
-         *
-         * If there are no characters left in str,
-         * the permutation is complete.
-         */
+        // Base case: no characters are left
         if (str.length() == 0) {
 
-            // Print the completed permutation.
+            // Print the completed permutation
             System.out.println(permutation);
-
-            // Stop this recursive call.
             return;
         }
 
-        /*
-         * Try every character in the current string.
-         *
-         * For example:
-         *
-         * str = "abc"
-         *
-         * i = 0 -> choose 'a'
-         * i = 1 -> choose 'b'
-         * i = 2 -> choose 'c'
-         */
+        // Choose each character one by one
         for (int i = 0; i < str.length(); i++) {
 
-            // Select the character at index i.
+            // Select the current character
             char currentchar = str.charAt(i);
 
-            /*
-             * Remove the selected character from the string.
-             *
-             * Example:
-             *
-             * str = "abc"
-             * i = 1
-             *
-             * str.substring(0, 1) = "a"
-             * str.substring(2)    = "c"
-             *
-             * newStr = "a" + "c"
-             *        = "ac"
-             */
-            String newStr
-                    = str.substring(0, i) + str.substring(i + 1);
+            // Remove the selected character from str
+            String newStr = str.substring(0, i) + str.substring(i + 1);
 
-            /*
-             * Recursively generate permutations using:
-             *
-             * 1. newStr       -> remaining characters
-             * 2. permutation + currentchar
-             *                  -> selected characters
-             */
-            printPermutation(
-                    newStr,
-                    permutation + currentchar
-            );
+            // Add the selected character to permutation
+            // and recursively call the function
+            printPermutation(newStr, permutation + currentchar);
         }
     }
 
-    /**
-     * Main method.
-     *
-     * @param args command-line arguments
-     */
     public static void main(String[] args) {
 
-        // Input string.
+        // Input string
         String str = "abc";
 
-        /*
-         * Start permutation generation.
-         *
-         * str = "abc"
-         * permutation = ""
-         */
+        // Start recursion with an empty permutation
         printPermutation(str, "");
     }
 }
