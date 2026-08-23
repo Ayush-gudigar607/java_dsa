@@ -26,8 +26,9 @@ public class guestPairSingle {
         // Base Cases:
         // 1 guest  -> 1 way (Single)
         // 2 guests -> 2 ways (Both single OR 1 pair)
-        if (n == 1 || n == 2) {
-            return n;
+        if(n<=1)
+        {
+            return 1;
         }
 
         // Choice 1: The n-th guest stays single.
