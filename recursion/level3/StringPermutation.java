@@ -50,7 +50,8 @@ public class StringPermutation {
     public static void main(String[] args) {
 
         // Input string
-        String str = "abc";
+        // String str = "abc";
+        String str="abcd";
 
         // Start recursion with an empty permutation
         printPermutation(str, "");
