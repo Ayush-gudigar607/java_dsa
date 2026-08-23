@@ -1,4 +1,4 @@
-package recursion;
+package level1;
 
 public class naturalSum {
 
