@@ -6,8 +6,7 @@ public class towerOfHanoi {
     // src = source rod
     // helper = auxiliary rod
     // dest = destination rod
-    public static void towerOfHanoi(
-            int n, String src, String helper, String dest) {
+    public static void towerOfHanoi(int n, String src, String helper, String dest) {
 
         // Base case: only one disk needs to be moved
         if (n == 1) {
@@ -21,9 +20,7 @@ public class towerOfHanoi {
         towerOfHanoi(n - 1, src, dest, helper);
 
         // Move the largest disk from source to destination
-        System.out.println(
-                "Move disk " + n + " from " + src + " to " + dest
-        );
+        System.out.println("Move disk " + n + " from " + src + " to " + dest);
 
         // Move n-1 disks from helper to destination
         towerOfHanoi(n - 1, helper, src, dest);
