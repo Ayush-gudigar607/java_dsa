@@ -14,7 +14,7 @@ public class subsequent {
         //two choices =choose or not choose
         //to be 
         subsequences(str, idx + 1, newString + currentChar);
- 
+
         //not to be 
         subsequences(str, idx + 1, newString);
     }
