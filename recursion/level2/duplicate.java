@@ -17,9 +17,10 @@ public class duplicate {
 
         // Get the current character
         char currentChar = str.charAt(idx);
+        int index=currentChar-'a';
 
         // Check whether the character is already present
-        if (map[currentChar - 'a'] == true) {
+        if (map[index] == true) {
 
             // Character is duplicate, so skip it
             removeDuplicates(str, idx + 1, newString);
@@ -30,7 +31,7 @@ public class duplicate {
             newString += currentChar;
 
             // Mark the character as already present
-            map[currentChar - 'a'] = true;
+            map[index] = true;
 
             // Move to the next character
             removeDuplicates(str, idx + 1, newString);
