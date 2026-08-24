@@ -8,7 +8,7 @@ public class subsequent {
             System.out.println(newString);
             return;
         }
-
+        // Get the current character
         char currentChar = str.charAt(idx);
 
         //two choices =choose or not choose
@@ -20,7 +20,9 @@ public class subsequent {
     }
 
     public static void main(String args[]) {
+        // Input string
         String str = "abc";
+        // Start recursion from index 0 with an empty newString
         subsequences(str, 0, "");
     }
 }
