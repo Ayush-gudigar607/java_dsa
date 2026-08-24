@@ -32,3 +32,26 @@ public class reverse {
         reverseString(str, str.length() - 1);
     }
 }
+
+/** Add Another Method from taking index from starting  */
+
+// public class reverse{
+//   public static void reverse(String str,int idx)
+//   {
+
+//    if(idx==str.length())
+//    {
+//    return;
+//    }
+   
+//    reverse(str,idx+1);
+//    System.out.print(str.charAt(idx));
+
+//   }
+
+//   public static void main(String[] args)
+//   {
+//     String str="Ayush";
+//     reverse(str,0);
+//   }
+// }
