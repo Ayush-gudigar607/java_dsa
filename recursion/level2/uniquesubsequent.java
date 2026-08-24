@@ -15,7 +15,6 @@ public class uniquesubsequent {
             if (set.contains(newString)) {
                 return;
             } else {
-
                 // Print and store the new subsequence
                 System.out.println(newString);
                 set.add(newString);
@@ -27,9 +26,7 @@ public class uniquesubsequent {
         char currentChar = str.charAt(idx);
 
         // Choice 1: Include the current character
-        subsequences(
-                str, idx + 1, newString + currentChar, set
-        );
+        subsequences(str, idx + 1, newString + currentChar, set);
 
         // Choice 2: Do not include the current character
         subsequences(
