@@ -55,8 +55,6 @@ public class vocons {
 //                ch.equalsIgnoreCase("u")) {
 //                System.out.println(ch + " is a vowel");
 //            } 
-
-
 //        else{
 //         System.out.println(ch+"is consonants");
 //        }

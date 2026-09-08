@@ -14,11 +14,11 @@ public class maximun {
         {
           max=b;
         }
-        else if(c>max)
+         if(c>max)
         {
           max=c;
         }
-        else{
+        if(d>max){
           max=d;
         }
         System.out.println(max + "is the maximum number");
