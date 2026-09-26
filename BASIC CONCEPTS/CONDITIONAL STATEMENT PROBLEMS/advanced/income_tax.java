@@ -5,13 +5,15 @@ public class income_tax {
       Scanner sc=new Scanner(System.in);
       double income=sc.nextFloat();
       double tax=0;
-
+      
+      //if income was 10000 and lesser than 50000
       if( income>10000  && income<=50000)
       {
          tax=income*0.02;
         System.out.println("Tax:"+tax);
 
       }
+      //more than 50000 and more than one lakh 
       else if(income>50000 && income>100000)
       {
          tax=income*0.05;
