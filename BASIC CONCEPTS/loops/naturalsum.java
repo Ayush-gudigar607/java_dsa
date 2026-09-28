@@ -7,6 +7,7 @@ public class naturalsum {
         int n = sc.nextInt();
 
         int sum = 0;
+      //logic for sum of the value
         for (int i = 1; i <= n; i++) {
             sum = sum + i;
         }
