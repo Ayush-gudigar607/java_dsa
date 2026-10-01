@@ -2,26 +2,37 @@ import java.util.*;
 
 public class AscendingArray {
 
-    public static void main(String[] args) {
+  public static void Ascending(int length)
+  {
 
-        Scanner sc = new Scanner(System.in);
+    Scanner sc=new Scanner(System.in);
+    int arr[]=new int[length];
 
-        int length = sc.nextInt();
+      for (int i=0;i<length ;i++ )
+      {
+        arr[i]=sc.nextInt();
+      } 
 
-        int previous = sc.nextInt();
-        boolean isAscending = true;
+      boolean isAscending=true;
 
-        for (int i = 1; i < length; i++) {
+      for (int i=0;i<length-1 ;i++ )
+      {
+        if(arr[i]>arr[i+1])
+        {
+          isAscending=false;
 
-            int current = sc.nextInt();
-
-            if (previous > current) {
-                isAscending = false;
-            }
-
-            previous = current;
         }
+      }
 
-        System.out.print(isAscending);
+      System.out.print(isAscending);
+  }
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      int length=sc.nextInt();
+
+      Ascending(length);
+       
+
+      
     }
 }
