@@ -17,7 +17,7 @@ public class SeriesGenerator {
             int powerOfTwo = 1;
             
             for (int i = 0; i < n; i++) {
-                currentTerm += powerOfTwo * b;
+                currentTerm = currentTerm+powerOfTwo * b;
                 System.out.print(currentTerm + " ");
                 powerOfTwo =powerOfTwo * 2;
             }
