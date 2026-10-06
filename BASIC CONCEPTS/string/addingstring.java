@@ -7,6 +7,5 @@ public class addingstring {
         String name = sc.nextLine();
         String lastname = sc.nextLine();
         System.out.print(name + "@" + lastname);
-        sc.close();
     }
 }
