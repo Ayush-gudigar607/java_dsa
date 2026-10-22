@@ -30,8 +30,6 @@ public class hallowrhombus {
           }
         }
         System.out.println();
-
-        
       }
 }  
 }
