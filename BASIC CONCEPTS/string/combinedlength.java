@@ -10,10 +10,11 @@ public class combinedlength {
 
       for (int i=0;i<size ;i++ )
       {
+        //used to find the total length of the string
         array[i]=sc.next();
         totalLength+=array[i].length();
       } 
-
+      //print the totallength of the string
       System.out.print("The total length is:"+totalLength);
 
       
