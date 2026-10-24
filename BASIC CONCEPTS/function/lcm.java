@@ -2,7 +2,7 @@
 import java.util.*;
 
 public class lcm {
-
+    //function used to find the lcm value
     public static void lcmvalue(int n1, int n2) {
         int lcm = Math.max(n1, n2);
 
