@@ -6,6 +6,7 @@ public class addingstring {
         // concatination
         String name = sc.nextLine();
         String lastname = sc.nextLine();
+        //concatinating two strings using + operator
         System.out.print(name + "@" + lastname);
     }
 }
