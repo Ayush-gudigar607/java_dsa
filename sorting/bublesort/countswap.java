@@ -1,0 +1,41 @@
+package bublesort;
+
+//This program is mainly worked on sorting technique named as bubblesort
+public class countswap{
+  //function to print the array element
+  public static void printArray(int arr[])
+  {
+    for (int i=0;i<arr.length ;i++ )
+    {
+      System.out.print(arr[i]+" ");
+    } 
+    System.out.println();
+  }
+
+    public static void main(String[] args) {
+      //declaration of array element 
+      int[] arr={7,8,3,1,2};
+      int count=0;
+
+      //bubble short(time complexity is O(n^2))
+      for(int i=0;i<arr.length;i++)
+      {
+        //This is the main logic for sorting: 8 is the biggest element, so it will be placed at the last position. Therefore, there is no need to traverse that element again in the next loop. That is why we add -i
+        for(int j=0;j<arr.length-1-i;j++)
+        {
+           if(arr[j]<arr[j+1])
+           {
+            //swap
+            int temp=arr[j];
+            arr[j]=arr[j+1];
+            arr[j+1]=temp;
+            count++;
+           }
+        }
+      }
+      System.out.println(count);
+      //call the printArray
+      printArray(arr);
+
+    }
+}

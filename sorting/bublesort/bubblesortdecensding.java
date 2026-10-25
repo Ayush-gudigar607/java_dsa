@@ -1,3 +1,4 @@
+package bublesort;
 //This program is mainly worked on sorting technique named as bubblesort
 public class bubblesortdecensding{
   //function to print the array element
