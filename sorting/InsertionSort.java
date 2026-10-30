@@ -22,7 +22,7 @@ public class InsertionSort {
 
         while(j>=0 && current<arr[j])
         {
-          //shift the element
+        //shift the element
          arr[j+1]=arr[j];
          //this will help to traverse the previous element
          j--;
