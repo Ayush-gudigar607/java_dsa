@@ -12,13 +12,13 @@ public class bubblesortdecensding{
   }
 
     public static void main(String[] args) {
-      //declaration of array element 
+      //declaration of array elements
       int[] arr={7,8,3,1,2};
 
       //bubble short(time complexity is O(n^2))
       for(int i=0;i<arr.length;i++)
       {
-        //This is the main logic for sorting: 8 is the biggest element, so it will be placed at the last position. Therefore, there is no need to traverse that element again in the next loop. That is why we add -i
+        //This is the main logic for sorting: 8 is the biggest element, so it will be placed at the last position. Therefore, there is no need to traverse that element again in the next loop. That is why we add -i.
         for(int j=0;j<arr.length-1-i;j++)
         {
            if(arr[j]<arr[j+1])
