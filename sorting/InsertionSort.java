@@ -1,6 +1,6 @@
-//This is an implementation of insertion sort in java
+//This is an implementation of insertion sort in java program
 public class InsertionSort {
-  //function to print the array element
+  //function to print the array elements
   public static void printArray(int arr[])
   {
     for (int i=0;i<arr.length ;i++ )
