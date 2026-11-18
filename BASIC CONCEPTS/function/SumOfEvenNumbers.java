@@ -7,6 +7,7 @@ public class SumOfEvenNumbers {
         return n * (n + 1);
     }
 
+    //main function
     public static void main(String[] args) {
         int n = new Scanner(System.in).nextInt();
         System.out.print(SumOfEvenNumbers(n));
