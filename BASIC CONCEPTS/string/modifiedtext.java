@@ -2,69 +2,62 @@ import java.util.*;
 
 public class modifiedtext {
    public static void main(String args[]) {
-       
-      Scanner sc=new Scanner(System.in);
+
+      Scanner sc = new Scanner(System.in);
       System.out.print("Enter the text:");
-      String originaltext=sc.next();
+      String originaltext = sc.next();
 
-      String modifiedNumber=originaltext.replace('e','i');
+      String modifiedNumber = originaltext.replace('e', 'i');
 
-      System.out.println("Modifed result:"+modifiedNumber);
+      System.out.println("Modifed result:" + modifiedNumber);
 
-
-
-      
-      
    }
 }
 
-
 // public class modifiedtext {
-//    public static void main(String args[]) {
-       
-//       Scanner sc=new Scanner(System.in);
-//       System.out.print("Enter the text:");
-//       String originaltext=sc.next();
+// public static void main(String args[]) {
 
-//       char[] chars=originaltext.toCharArray();
+// Scanner sc=new Scanner(System.in);
+// System.out.print("Enter the text:");
+// String originaltext=sc.next();
 
-//       for(int i=0;i<chars.length;i++)
-//       {
-//         if(chars[i]=='e')
-//         {
-//           chars[i]='i';
-//         }
-//       }
+// char[] chars=originaltext.toCharArray();
 
-//       String modifiedtext=new String(chars);
-//       System.out.println(modifiedtext);
-   //    }
+// for(int i=0;i<chars.length;i++)
+// {
+// if(chars[i]=='e')
+// {
+// chars[i]='i';
+// }
+// }
+
+// String modifiedtext=new String(chars);
+// System.out.println(modifiedtext);
+// }
 // }
 
 // import java.util.*;
 
 // public class modifiedtext {
-//    public static void main(String args[]) {
-       
-//       Scanner sc=new Scanner(System.in);
-//       System.out.print("Enter the text:");
-//       String str=sc.next();
-//       String result="";
+// public static void main(String args[]) {
 
-//       for (int i=0;i<str.length();i++ )
-//       {
-//         if(str.charAt(i)=='e')
-//         {
-//           result+='i';
-//         }
-//         else{
-//           result+=str.charAt(i);
-//         }
-//       }
+// Scanner sc=new Scanner(System.in);
+// System.out.print("Enter the text:");
+// String str=sc.next();
+// String result="";
 
-//       System.out.println(result); 
- 
-//    }
+// for (int i=0;i<str.length();i++ )
+// {
+// if(str.charAt(i)=='e')
+// {
+// result+='i';
+// }
+// else{
+// result+=str.charAt(i);
+// }
 // }
 
+// System.out.println(result);
 
+// }
+// }
