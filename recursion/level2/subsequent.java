@@ -11,11 +11,11 @@ public class subsequent {
         // Get the current character
         char currentChar = str.charAt(idx);
 
-        //two choices =choose or not choose
-        //to be 
+        // two choices =choose or not choose
+        // to be
         subsequences(str, idx + 1, newString + currentChar);
 
-        //not to be 
+        // not to be
         subsequences(str, idx + 1, newString);
     }
 
