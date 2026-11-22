@@ -30,8 +30,7 @@ public class uniquesubsequent {
 
         // Choice 2: Do not include the current character
         subsequences(
-                str, idx + 1, newString, set
-        );
+                str, idx + 1, newString, set);
     }
 
     public static void main(String args[]) {
