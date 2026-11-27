@@ -50,7 +50,7 @@ public class Mergesort  {
       int mid=si+(ei-si)/2; //or int mid=(si+ei)/2;
       divide(arr,si,mid);
       divide(arr,mid+1,ei);
-
+      
       conquer(arr,si,mid,ei);
 
     }
